@@ -122,9 +122,9 @@
             this.label4.ForeColor = System.Drawing.Color.Teal;
             this.label4.Location = new System.Drawing.Point(317, 266);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 20);
+            this.label4.Size = new System.Drawing.Size(57, 20);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Password";
+            this.label4.Text = "Reset";
             // 
             // login
             // 
