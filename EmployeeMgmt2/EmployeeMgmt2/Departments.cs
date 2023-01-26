@@ -51,5 +51,11 @@ namespace EmployeeMgmt2
 
             }
         }
+
+        int key = 0;
+        private void Deplist_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
