@@ -1,0 +1,12 @@
+C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\bin\Debug\EmployeeMgmt2.exe.config
+C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\bin\Debug\EmployeeMgmt2.exe
+C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\bin\Debug\EmployeeMgmt2.pdb
+C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\obj\Debug\EmployeeMgmt2.csproj.AssemblyReference.cache
+C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\obj\Debug\EmployeeMgmt2.csproj.SuggestedBindingRedirects.cache
+C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\obj\Debug\EmployeeMgmt2.Employees.resources
+C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\obj\Debug\EmployeeMgmt2.login.resources
+C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\obj\Debug\EmployeeMgmt2.Properties.Resources.resources
+C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\obj\Debug\EmployeeMgmt2.csproj.GenerateResource.cache
+C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\obj\Debug\EmployeeMgmt2.csproj.CoreCompileInputs.cache
+C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\obj\Debug\EmployeeMgmt2.exe
+C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\obj\Debug\EmployeeMgmt2.pdb
