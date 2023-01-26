@@ -38,7 +38,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.DepNameTb = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.EditBtn = new System.Windows.Forms.Button();
             this.AddBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
@@ -116,16 +116,16 @@
             this.DepNameTb.Size = new System.Drawing.Size(230, 26);
             this.DepNameTb.TabIndex = 28;
             // 
-            // button2
+            // EditBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(171, 373);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 52);
-            this.button2.TabIndex = 41;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.EditBtn.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.EditBtn.ForeColor = System.Drawing.Color.Black;
+            this.EditBtn.Location = new System.Drawing.Point(171, 373);
+            this.EditBtn.Name = "EditBtn";
+            this.EditBtn.Size = new System.Drawing.Size(85, 52);
+            this.EditBtn.TabIndex = 41;
+            this.EditBtn.Text = "Update";
+            this.EditBtn.UseVisualStyleBackColor = false;
             // 
             // AddBtn
             // 
@@ -301,7 +301,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gunaDataGridView1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.EditBtn);
             this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.DepNameTb);
@@ -335,7 +335,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox DepNameTb;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button EditBtn;
         private System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.Label label3;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
