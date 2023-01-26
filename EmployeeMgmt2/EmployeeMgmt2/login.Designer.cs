@@ -33,6 +33,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Teal;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(51, 52);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(279, 67);
