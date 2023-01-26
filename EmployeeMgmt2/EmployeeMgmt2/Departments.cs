@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -54,8 +55,18 @@ namespace EmployeeMgmt2
 
         int key = 0;
         private void Deplist_CellContentClick(object sender, DataGridViewCellEventArgs e)
+     
         {
-
+            DepNameTb.Text = Deplist.SelectedRows[0].Cells[1].Value.ToString();
+            if (DepNameTb.Text == "") 
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(Deplist.SelectedRows[0].Cells[0].Value.ToString());
+            }
         }
+
     }
 }
