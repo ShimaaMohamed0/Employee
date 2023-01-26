@@ -70,14 +70,14 @@
             this.label2.ForeColor = System.Drawing.Color.Teal;
             this.label2.Location = new System.Drawing.Point(445, 158);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(182, 40);
+            this.label2.Size = new System.Drawing.Size(165, 60);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Manage Departments\r\n\r\n";
+            this.label2.Text = "Manage Employees\r\n\r\n\r\n";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(90, 200);
+            this.pictureBox2.Location = new System.Drawing.Point(129, 204);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(77, 57);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

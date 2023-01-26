@@ -42,9 +42,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -71,7 +73,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Teal;
-            this.label1.Location = new System.Drawing.Point(472, 175);
+            this.label1.Location = new System.Drawing.Point(479, 208);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(182, 40);
             this.label1.TabIndex = 3;
@@ -130,7 +132,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Teal;
-            this.label3.Location = new System.Drawing.Point(680, 268);
+            this.label3.Location = new System.Drawing.Point(628, 245);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(127, 20);
             this.label3.TabIndex = 42;
@@ -193,12 +195,23 @@
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(367, 166);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(49, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 44;
+            this.pictureBox1.TabStop = false;
+            // 
             // Departments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1206, 616);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gunaDataGridView1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
@@ -218,6 +231,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,5 +249,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
