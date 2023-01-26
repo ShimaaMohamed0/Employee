@@ -24,5 +24,10 @@ namespace EmployeeMgmt2
 
 
         }
+
+        public DataTable GetData(string Query)
+        {
+
+        }
     }
 }
