@@ -37,6 +37,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -118,11 +119,22 @@
             this.textBox1.Size = new System.Drawing.Size(230, 26);
             this.textBox1.TabIndex = 29;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Teal;
+            this.label5.Location = new System.Drawing.Point(65, 412);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(115, 20);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "Days Attended";
+            // 
             // Salaries
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1227, 715);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox1);
@@ -154,5 +166,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label5;
     }
 }
