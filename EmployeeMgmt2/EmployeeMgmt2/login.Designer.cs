@@ -79,7 +79,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(236, 182);
+            this.textBox2.Location = new System.Drawing.Point(236, 194);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(230, 26);
             this.textBox2.TabIndex = 4;
@@ -98,7 +98,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Teal;
-            this.label3.Location = new System.Drawing.Point(232, 163);
+            this.label3.Location = new System.Drawing.Point(232, 171);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 20);
             this.label3.TabIndex = 6;
@@ -106,11 +106,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(255, 214);
+            this.button1.Location = new System.Drawing.Point(270, 235);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(182, 28);
             this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
+            this.button1.Text = "LOGIN";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // login
