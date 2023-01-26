@@ -17,7 +17,7 @@ namespace EmployeeMgmt2
         private string constr;
         public Function()
         {
-
+            constr
         }
     }
 }
