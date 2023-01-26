@@ -35,7 +35,16 @@ namespace EmployeeMgmt2
         }
         public int SetData(string Query)
         {
+            int cnt = 0;
+            if(con.State == ConnectionState.Closed)
+            {
+                con.Open();
 
-        }
+            }
+            cmd.CommandText = Query;
+            cnt = cmd.ExecuteNonQuery();
+            return cnt;
+
+                }
     }
 }

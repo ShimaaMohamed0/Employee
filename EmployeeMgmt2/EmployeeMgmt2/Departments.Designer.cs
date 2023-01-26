@@ -37,7 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DepNameTb = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -109,12 +109,12 @@
             this.label4.TabIndex = 29;
             this.label4.Text = "Department Name";
             // 
-            // textBox1
+            // DepNameTb
             // 
-            this.textBox1.Location = new System.Drawing.Point(26, 291);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 26);
-            this.textBox1.TabIndex = 28;
+            this.DepNameTb.Location = new System.Drawing.Point(26, 291);
+            this.DepNameTb.Name = "DepNameTb";
+            this.DepNameTb.Size = new System.Drawing.Size(230, 26);
+            this.DepNameTb.TabIndex = 28;
             // 
             // button2
             // 
@@ -304,7 +304,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.DepNameTb);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -334,7 +334,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox DepNameTb;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
