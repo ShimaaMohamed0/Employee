@@ -10,3 +10,7 @@ C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\obj\Debug\EmployeeMgmt2.csproj.Generate
 C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\obj\Debug\EmployeeMgmt2.csproj.CoreCompileInputs.cache
 C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\obj\Debug\EmployeeMgmt2.exe
 C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\obj\Debug\EmployeeMgmt2.pdb
+C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\bin\Debug\Guna.UI.dll
+C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\obj\Debug\EmployeeMgmt2.Departments.resources
+C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\obj\Debug\EmployeeMgmt2.Salaries.resources
+C:\Employee1\EmployeeMgmt2\EmployeeMgmt2\obj\Debug\EmployeeMgmt2.csproj.CopyComplete

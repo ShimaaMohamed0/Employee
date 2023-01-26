@@ -82,9 +82,9 @@
             this.label2.ForeColor = System.Drawing.Color.Teal;
             this.label2.Location = new System.Drawing.Point(485, 201);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 60);
+            this.label2.Size = new System.Drawing.Size(133, 60);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Manage Employees\r\n\r\n\r\n";
+            this.label2.Text = "Manage Salary \r\n\r\n\r\n";
             // 
             // pictureBox2
             // 
@@ -310,6 +310,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Salaries";
             this.Text = "Salaries";
+            this.Load += new System.EventHandler(this.Salaries_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

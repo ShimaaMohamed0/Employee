@@ -26,5 +26,10 @@ namespace EmployeeMgmt2
         {
 
         }
+
+        private void Salaries_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
