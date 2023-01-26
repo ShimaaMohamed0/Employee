@@ -27,6 +27,14 @@ namespace EmployeeMgmt2
 
         public DataTable GetData(string Query)
         {
+            dt = new DataTable();
+            sda = new SqlDataAdapter(Query,constr);
+            sda.Fill(dt);
+            return dt;
+
+        }
+        public int SetData(string Query)
+        {
 
         }
     }
