@@ -17,7 +17,12 @@ namespace EmployeeMgmt2
         private string constr;
         public Function()
         {
-            constr
+            constr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\dubai key\OneDrive\المستندات\EmpDb.mdf"";Integrated Security=True;Connect Timeout=30";
+            con = new SqlConnection(constr);
+            cmd = new SqlCommand();
+            cmd.Connection = con;
+
+
         }
     }
 }
