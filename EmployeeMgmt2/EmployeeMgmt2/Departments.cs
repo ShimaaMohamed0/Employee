@@ -18,23 +18,38 @@ namespace EmployeeMgmt2
         {
             InitializeComponent();
             con = new Function();
-            ListerDepartment();
+            ShowDepartments();
         }
-        private void ListerDepartment()
+        private void ShowDepartments()
         {
             string Query = "Select * from DepartmentTbl";
-            Deplist.DataSource = con.GetData(Query)
+            Deplist.DataSource = con.GetData(Query);
         }
         private void Departments_Load(object sender, EventArgs e)
         {
             try
             {
+                if (DepNameTb.Text == "")
+                {
+                    MessageBox.Show("Missing Data!!!");
+                }
+                else
 
+                {
+                    string Dep = DepNameTb.Text;
+                    string Query = "insert into DepartmentTbl values('{0}')";
+                    Query = string.Format( Query,DepNameTb.Text);
+                    con.SetData(Query);
+                    ShowDepartments();
+                    MessageBox.Show("Department Added!!!");
+                    DepNameTb.Text = "";
+                }
             }
             catch (Exception Ex)
             {
                 MessageBox.Show(Ex.Message);
 
+            }
         }
     }
 }
