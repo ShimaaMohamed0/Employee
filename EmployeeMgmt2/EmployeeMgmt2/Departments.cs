@@ -16,5 +16,14 @@ namespace EmployeeMgmt2
         {
             InitializeComponent();
         }
+        private void ListerDepartment()
+        {
+            string Query = "Select * from DepartmentTbl";
+
+        }
+        private void Departments_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
