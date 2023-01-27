@@ -16,9 +16,11 @@ namespace EmployeeMgmt2
         public Salaries()
         {
             InitializeComponent();
-        }
+            con = new Function();
+            ShowSalary();
+            GetEmployees();
 
-        private void label4_Click(object sender, EventArgs e)
+            private void label4_Click(object sender, EventArgs e)
         {
 
         }
