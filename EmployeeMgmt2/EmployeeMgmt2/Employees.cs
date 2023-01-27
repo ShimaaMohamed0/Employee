@@ -12,6 +12,7 @@ namespace EmployeeMgmt2
 {
     public partial class Employees : Form
     {
+        Function Con;
         public Employees()
         {
             InitializeComponent();
