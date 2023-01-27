@@ -32,29 +32,128 @@ namespace EmployeeMgmt2
             DepCb.DataSource = con.GetData(Query);
 
         }
-        private void label1_Click(object sender, EventArgs e)
+        private void Addbtn_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (EmpNameTb.Text == "" || GenCb.SelectedIndex == -1 || DepCb.SelectedIndex == -1 || DailySalTb.Text == "")
+                {
+                    MessageBox.Show("missing data!!!");
+                }
+                else
+                {
+                    string Name = EmpNameTb.Text;
+                    string Gender = GenCb.SelectedItem.ToString();
+                    int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
+                    string DOB = DOBTb.Value.ToString();
+                    string JDate = JDateTb.Value.ToString();
+                    int Salary = Convert.ToInt32(DailySalTb.Text);
+                    string Query = "insert into EmployeeTb1 values('{0}','{1}',{2},'{3}','{4}',{5})";
+                    Query = string.Format(Query, Name, Gender, Dep, DOB, JDate, Salary);
+                    con.SetData(Query);
+                    ShowEmp();
+                    MessageBox.Show("Emoloyee Updated!!!");
+                    EmpNameTb.Text = "";
+                    DailySalTb.Text = "";
+                    GenCb.SelectedIndex = -1;
+                    DepCb.SelectedIndex = -1;
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void DeleteBtn_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (key == 0)
+                {
+                    MessageBox.Show("missing data!!!");
+                }
+                else
+                {
+                    string Name = EmpNameTb.Text;
+                    string Gender = GenCb.SelectedItem.ToString();
+                    int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
+                    string DOB = DOBTb.Value.ToString();
+                    string JDate = JDateTb.Value.ToString();
+                    int Salary = Convert.ToInt32(DailySalTb.Text);
+                    string Query = "Delete from EmployeeTb1 where Empid= {0}";
+                    Query = string.Format(Query, key);
+                    con.SetData(Query);
+                    ShowEmp();
+                    MessageBox.Show("Emoloyee Deleted!!!");
+                    EmpNameTb.Text = "";
+                    DailySalTb.Text = "";
+                    GenCb.SelectedIndex = -1;
+                    DepCb.SelectedIndex = -1;
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
         }
 
-        private void label2_Click_1(object sender, EventArgs e)
+        private void UpdateBtn_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (EmpNameTb.Text == "" || GenCb.SelectedIndex == -1 || DepCb.SelectedIndex == -1 || DailySalTb.Text == "")
+                {
+                    MessageBox.Show("missing data!!!");
+                }
+                else
+                {
+                    string Name = EmpNameTb.Text;
+                    string Gender = GenCb.SelectedItem.ToString();
+                    int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
+                    string DOB = DOBTb.Value.Date.ToString();
+                    string JDate = JDateTb.Value.Date.ToString();
+                    int Salary = Convert.ToInt32(DailySalTb.Text);
+                    string Query = "Update EmployeeTb1 set EmpName = '{0}',EmpGen='{1}',EmpDep={2},EmpDOB='{3}',Empjdate='{4}',EmpSal={5} where Empid= {6}";
+                    Query = string.Format(Query, Name, Gender, Dep, DOB, JDate, Salary, key);
+                    con.SetData(Query);
+                    ShowEmp();
+                    MessageBox.Show("Emoloyee Updated!!!");
+                    EmpNameTb.Text = "";
+                    DailySalTb.Text = "";
+                    GenCb.SelectedIndex = -1;
+                    DepCb.SelectedIndex = -1;
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
         }
-
-        private void Employees_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        int key = 0;
         private void EmployeeList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            EmpNameTb.Text = EmployeeList.SelectedRows[0].Cells[1].Value.ToString();
+            GenCb.Text = EmployeeList.SelectedRows[0].Cells[2].Value.ToString();
+            DepCb.SelectedValue = EmployeeList.SelectedRows[0].Cells[3].Value.ToString();
+            DOBTb.Text = EmployeeList.SelectedRows[0].Cells[4].Value.ToString();
+            JDateTb.Text = EmployeeList.SelectedRows[0].Cells[5].Value.ToString();
+            DailySalTb.Text = EmployeeList.SelectedRows[0].Cells[6].Value.ToString();
+            if (EmpNameTb.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(EmployeeList.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
 
+        private void label9_Click(object sender, EventArgs e)
+        {
+            login Obj = new login();
+            Obj.Show();
+            this.Hide();
         }
     }
 }

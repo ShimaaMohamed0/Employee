@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employees));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,7 +50,7 @@
             this.DepCb = new System.Windows.Forms.ComboBox();
             this.EmployeeList = new Guna.UI.WinForms.GunaDataGridView();
             this.DOBTb = new Guna.UI.WinForms.GunaDateTimePicker();
-            this.JDate = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.JDateTb = new Guna.UI.WinForms.GunaDateTimePicker();
             this.AddBtn = new System.Windows.Forms.Button();
             this.UpdateBtn = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -88,7 +88,7 @@
             this.label2.Size = new System.Drawing.Size(356, 40);
             this.label2.TabIndex = 1;
             this.label2.Text = "Employee Management System Version 1.0\r\n\r\n";
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
+            this.label2.Click += new System.EventHandler(this.label2_Click_);
             // 
             // label1
             // 
@@ -224,30 +224,30 @@
             // 
             // EmployeeList
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.EmployeeList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.EmployeeList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.EmployeeList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.EmployeeList.BackgroundColor = System.Drawing.Color.White;
             this.EmployeeList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EmployeeList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.EmployeeList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.EmployeeList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.EmployeeList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.EmployeeList.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.EmployeeList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.EmployeeList.ColumnHeadersHeight = 4;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.EmployeeList.DefaultCellStyle = dataGridViewCellStyle6;
             this.EmployeeList.EnableHeadersVisualStyles = false;
             this.EmployeeList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.EmployeeList.Location = new System.Drawing.Point(404, 259);
@@ -268,7 +268,7 @@
             this.EmployeeList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.EmployeeList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmployeeList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.EmployeeList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.EmployeeList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.EmployeeList.ThemeStyle.HeaderStyle.Height = 4;
             this.EmployeeList.ThemeStyle.ReadOnly = false;
             this.EmployeeList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -290,6 +290,7 @@
             this.DOBTb.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.DOBTb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DOBTb.ForeColor = System.Drawing.Color.Black;
+            this.DOBTb.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.DOBTb.Location = new System.Drawing.Point(26, 438);
             this.DOBTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DOBTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -300,30 +301,31 @@
             this.DOBTb.OnPressedColor = System.Drawing.Color.Black;
             this.DOBTb.Size = new System.Drawing.Size(223, 30);
             this.DOBTb.TabIndex = 26;
-            this.DOBTb.Text = "Thursday, January 26, 2023";
+            this.DOBTb.Text = "1/26/2023";
             this.DOBTb.Value = new System.DateTime(2023, 1, 26, 20, 54, 25, 602);
             // 
-            // JDate
+            // JDateTb
             // 
-            this.JDate.BaseColor = System.Drawing.Color.Teal;
-            this.JDate.BorderColor = System.Drawing.Color.Silver;
-            this.JDate.CustomFormat = null;
-            this.JDate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.JDate.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.JDate.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.JDate.ForeColor = System.Drawing.Color.Black;
-            this.JDate.Location = new System.Drawing.Point(22, 494);
-            this.JDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.JDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.JDate.Name = "JDate";
-            this.JDate.OnHoverBaseColor = System.Drawing.Color.White;
-            this.JDate.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.JDate.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.JDate.OnPressedColor = System.Drawing.Color.Black;
-            this.JDate.Size = new System.Drawing.Size(223, 30);
-            this.JDate.TabIndex = 27;
-            this.JDate.Text = "Thursday, January 26, 2023";
-            this.JDate.Value = new System.DateTime(2023, 1, 26, 20, 54, 25, 602);
+            this.JDateTb.BaseColor = System.Drawing.Color.Teal;
+            this.JDateTb.BorderColor = System.Drawing.Color.Silver;
+            this.JDateTb.CustomFormat = null;
+            this.JDateTb.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.JDateTb.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.JDateTb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.JDateTb.ForeColor = System.Drawing.Color.Black;
+            this.JDateTb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.JDateTb.Location = new System.Drawing.Point(22, 494);
+            this.JDateTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.JDateTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.JDateTb.Name = "JDateTb";
+            this.JDateTb.OnHoverBaseColor = System.Drawing.Color.White;
+            this.JDateTb.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.JDateTb.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.JDateTb.OnPressedColor = System.Drawing.Color.Black;
+            this.JDateTb.Size = new System.Drawing.Size(223, 30);
+            this.JDateTb.TabIndex = 27;
+            this.JDateTb.Text = "1/26/2023";
+            this.JDateTb.Value = new System.DateTime(2023, 1, 26, 20, 54, 25, 602);
             // 
             // AddBtn
             // 
@@ -443,7 +445,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.UpdateBtn);
             this.Controls.Add(this.AddBtn);
-            this.Controls.Add(this.JDate);
+            this.Controls.Add(this.JDateTb);
             this.Controls.Add(this.DOBTb);
             this.Controls.Add(this.EmployeeList);
             this.Controls.Add(this.DepCb);
@@ -501,7 +503,7 @@
         private System.Windows.Forms.ComboBox DepCb;
         private Guna.UI.WinForms.GunaDataGridView EmployeeList;
         private Guna.UI.WinForms.GunaDateTimePicker DOBTb;
-        private Guna.UI.WinForms.GunaDateTimePicker JDate;
+        private Guna.UI.WinForms.GunaDateTimePicker JDateTb;
         private System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.Button UpdateBtn;
         private System.Windows.Forms.PictureBox pictureBox5;
