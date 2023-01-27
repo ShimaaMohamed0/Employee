@@ -25,7 +25,7 @@ namespace EmployeeMgmt2
             try
             {
                 string Query = "Select * from EmployeeTb1";
-                = Con.GetData(Query);
+                EmployeeList.DataSource = Con.GetData(Query);
             }
             catch (Exception)
             {
@@ -71,7 +71,7 @@ namespace EmployeeMgmt2
         private void GetDepartment()
         {
             string Query = "Select * from DepartmentTb1";
-            DepCb.DisplayMember = Con.GetData(Query).Columns["Depname"].ToString();
+            = Con.GetData(Query).Columns["Depname"].ToString();
             DepCb.ValueMember = Con.GetData(Query).Columns["Depid"].ToString();
             DepCb.DataSource = Con.GetData(Query);
 
