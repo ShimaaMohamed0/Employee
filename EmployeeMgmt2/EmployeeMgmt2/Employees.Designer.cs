@@ -49,7 +49,7 @@
             this.GenCb = new System.Windows.Forms.ComboBox();
             this.DepCb = new System.Windows.Forms.ComboBox();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
-            this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.DOBTb = new Guna.UI.WinForms.GunaDateTimePicker();
             this.gunaDateTimePicker2 = new Guna.UI.WinForms.GunaDateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -279,28 +279,28 @@
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // gunaDateTimePicker1
+            // DOBTb
             // 
-            this.gunaDateTimePicker1.BackColor = System.Drawing.Color.Teal;
-            this.gunaDateTimePicker1.BaseColor = System.Drawing.Color.Teal;
-            this.gunaDateTimePicker1.BorderColor = System.Drawing.Color.Silver;
-            this.gunaDateTimePicker1.CustomFormat = null;
-            this.gunaDateTimePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.gunaDateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaDateTimePicker1.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Location = new System.Drawing.Point(26, 438);
-            this.gunaDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.gunaDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.gunaDateTimePicker1.Name = "gunaDateTimePicker1";
-            this.gunaDateTimePicker1.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker1.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker1.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Size = new System.Drawing.Size(223, 30);
-            this.gunaDateTimePicker1.TabIndex = 26;
-            this.gunaDateTimePicker1.Text = "Thursday, January 26, 2023";
-            this.gunaDateTimePicker1.Value = new System.DateTime(2023, 1, 26, 20, 54, 25, 602);
+            this.DOBTb.BackColor = System.Drawing.Color.Teal;
+            this.DOBTb.BaseColor = System.Drawing.Color.Teal;
+            this.DOBTb.BorderColor = System.Drawing.Color.Silver;
+            this.DOBTb.CustomFormat = null;
+            this.DOBTb.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.DOBTb.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DOBTb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DOBTb.ForeColor = System.Drawing.Color.Black;
+            this.DOBTb.Location = new System.Drawing.Point(26, 438);
+            this.DOBTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DOBTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DOBTb.Name = "DOBTb";
+            this.DOBTb.OnHoverBaseColor = System.Drawing.Color.White;
+            this.DOBTb.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DOBTb.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DOBTb.OnPressedColor = System.Drawing.Color.Black;
+            this.DOBTb.Size = new System.Drawing.Size(223, 30);
+            this.DOBTb.TabIndex = 26;
+            this.DOBTb.Text = "Thursday, January 26, 2023";
+            this.DOBTb.Value = new System.DateTime(2023, 1, 26, 20, 54, 25, 602);
             // 
             // gunaDateTimePicker2
             // 
@@ -443,7 +443,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.gunaDateTimePicker2);
-            this.Controls.Add(this.gunaDateTimePicker1);
+            this.Controls.Add(this.DOBTb);
             this.Controls.Add(this.gunaDataGridView1);
             this.Controls.Add(this.DepCb);
             this.Controls.Add(this.GenCb);
@@ -499,7 +499,7 @@
         private System.Windows.Forms.ComboBox GenCb;
         private System.Windows.Forms.ComboBox DepCb;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
-        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker1;
+        private Guna.UI.WinForms.GunaDateTimePicker DOBTb;
         private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
