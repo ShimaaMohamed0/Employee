@@ -25,7 +25,7 @@ namespace EmployeeMgmt2
             try
             {
                 string Query = "Select * from EmployeeTb1";
-                EmployeeList.DataSource = Con.GetData(Query);
+                = Con.GetData(Query);
             }
             catch (Exception)
             {
