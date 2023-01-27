@@ -68,5 +68,58 @@ namespace EmployeeMgmt2
             }
         }
 
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (DepNameTb.Text == "")
+                {
+                    MessageBox.Show("missing data!!!");
+                }
+                else
+                {
+                    {
+                        string Dep = DepNameTb.Text;
+                        string Query = "Update DepartmentTb1 set Depname = '{0}' where Depid = {1}";
+                        Query = string.Format(Query, DepNameTb.Text, key);
+                        con.SetData(Query);
+                        ShowDepartments();
+                        MessageBox.Show("Department Updated!!!");
+                        DepNameTb.Text = "";
+                    }
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (DepNameTb.Text == "")
+                {
+                    MessageBox.Show("missing data!!!");
+                }
+                else
+                {
+                    string Dep = DepNameTb.Text;
+                    string Query = "Delete from DepartmentTb1 where Depid = {0}";
+                    Query = string.Format(Query, key);
+                    con.SetData(Query);
+                    ShowDepartments();
+                    MessageBox.Show("Department Deleted!!!");
+                    DepNameTb.Text = "";
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
     }
-}
+
+    }
+
