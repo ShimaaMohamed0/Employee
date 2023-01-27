@@ -39,7 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DaysTb = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.PeriodTb = new Guna.UI.WinForms.GunaDateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
@@ -134,12 +134,12 @@
             this.label4.TabIndex = 27;
             this.label4.Text = "Days Attended";
             // 
-            // textBox1
+            // DaysTb
             // 
-            this.textBox1.Location = new System.Drawing.Point(58, 367);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 26);
-            this.textBox1.TabIndex = 29;
+            this.DaysTb.Location = new System.Drawing.Point(58, 367);
+            this.DaysTb.Name = "DaysTb";
+            this.DaysTb.Size = new System.Drawing.Size(230, 26);
+            this.DaysTb.TabIndex = 29;
             // 
             // label5
             // 
@@ -387,7 +387,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.PeriodTb);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.DaysTb);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label3);
@@ -423,7 +423,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox DaysTb;
         private System.Windows.Forms.Label label5;
         private Guna.UI.WinForms.GunaDateTimePicker PeriodTb;
         private System.Windows.Forms.Label label6;
