@@ -43,7 +43,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.DailySalTb = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.GenCb = new System.Windows.Forms.ComboBox();
@@ -176,12 +176,12 @@
             this.label10.TabIndex = 17;
             this.label10.Text = "join Date";
             // 
-            // textBox6
+            // DailySalTb
             // 
-            this.textBox6.Location = new System.Drawing.Point(22, 546);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(230, 26);
-            this.textBox6.TabIndex = 19;
+            this.DailySalTb.Location = new System.Drawing.Point(22, 546);
+            this.DailySalTb.Name = "DailySalTb";
+            this.DailySalTb.Size = new System.Drawing.Size(230, 26);
+            this.DailySalTb.TabIndex = 19;
             // 
             // panel2
             // 
@@ -449,7 +449,7 @@
             this.Controls.Add(this.GenCb);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.DailySalTb);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
@@ -493,7 +493,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox DailySalTb;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ComboBox GenCb;
