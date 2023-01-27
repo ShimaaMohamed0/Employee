@@ -37,7 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.EmpCb = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.DaysTb = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -113,16 +113,16 @@
             this.label3.TabIndex = 25;
             this.label3.Text = "Employee";
             // 
-            // comboBox1
+            // EmpCb
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.EmpCb.FormattingEnabled = true;
+            this.EmpCb.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(58, 302);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(225, 28);
-            this.comboBox1.TabIndex = 26;
+            this.EmpCb.Location = new System.Drawing.Point(58, 302);
+            this.EmpCb.Name = "EmpCb";
+            this.EmpCb.Size = new System.Drawing.Size(225, 28);
+            this.EmpCb.TabIndex = 26;
             // 
             // label4
             // 
@@ -389,7 +389,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.DaysTb);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.EmpCb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
@@ -421,7 +421,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox EmpCb;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox DaysTb;
         private System.Windows.Forms.Label label5;
