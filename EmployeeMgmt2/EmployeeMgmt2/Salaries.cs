@@ -19,7 +19,11 @@ namespace EmployeeMgmt2
             con = new Function();
             ShowSalary();
             GetEmployees();
+        }
+        private void GetEmployees()
+        {
 
+        }
             private void label4_Click(object sender, EventArgs e)
         {
 
