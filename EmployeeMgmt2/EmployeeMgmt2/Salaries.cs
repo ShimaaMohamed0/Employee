@@ -25,10 +25,15 @@ namespace EmployeeMgmt2
             try
             {
                 string Query = "Select * from SalaryTb1";
-                SalaryList.DataSource = Con.GetData(Query);
+                SalaryList.DataSource = con.GetData(Query);
             }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
 
-            }
+    }
             private void label4_Click(object sender, EventArgs e)
         {
 
