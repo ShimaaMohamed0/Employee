@@ -12,48 +12,37 @@ namespace EmployeeMgmt2
 {
     public partial class Employees : Form
     {
-        Function Con;
+        Function con;
         public Employees()
         {
             InitializeComponent();
-            Con = new Function();
+            con = new Function();
             ShowEmp();
-            GetDepartment();
         }
         private void ShowEmp()
         {
-            try
-            {
-                string Query = "Select * from EmployeeTb1";
-                EmployeeList.DataSource = Con.GetData(Query);
-            }
-            catch (Exception)
-            {
-                throw;
-            }
+            string Query = "Select * from EmployeeTb1";
+            EmployeeList.DataSource = con.GetData(Query);
         }
+        private void GetDepartment()
+        {
+            string Query = "Select * from DepartmentTb1";
+            DepCb.DisplayMember = con.GetData(Query).Columns["Depname"].ToString();
+            DepCb.ValueMember = con.GetData(Query).Columns["Depid"].ToString();
+            DepCb.DataSource = con.GetData(Query);
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        }
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void label2_Click_1(object sender, EventArgs e)
         {
 
         }
@@ -63,83 +52,9 @@ namespace EmployeeMgmt2
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void EmployeeList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
-        }
-
-        private void GetDepartment()
-        {
-            string Query = "Select * from DepartmentTb1";
-            DepCb.DisplayMember = Con.GetData(Query).Columns["Depname"].ToString();
-            DepCb.ValueMember = Con.GetData(Query).Columns["Depid"].ToString();
-            DepCb.DataSource = Con.GetData(Query);
-
-        }
-        private void AddBtn_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (EmpNameTb.Text == "" || GenCb.SelectedIndex == -1 || DepCb.SelectedIndex == -1 || DailySalTb.Text == "")
-                {
-                    MessageBox.Show("missing data!!!");
-                }
-                else
-                {
-                    string Name = EmpNameTb.Text;
-                    string Gender= GenCb.SelectedItem.ToString();
-                    int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
-                    string DOB = DOBTb.Value.ToString();
-                    string JDate = JDateTb.Value.ToString();
-                    int Salary = Convert.ToInt32(DailySalTb.Text);
-                    string Query = "insert into EmployeeTb1 values('{0}','{1}',{2},'{3}','{4}',{5})";
-                    Query = string.Format(Query, Name, Gender, Dep, DOB, JDate, Salary);
-                    Con.SetData(Query);
-                    ShowEmp();
-                    MessageBox.Show("Emoloyee Updated!!!");
-                    EmpNameTb.Text = "";
-                    DailySalTb.Text = "";
-                    GenCb.SelectedIndex = -1;
-                    DepCb.SelectedIndex = -1;
-                }
-            }
-            catch (Exception Ex)
-            {
-                MessageBox.Show(Ex.Message);
-            }
-        }
-
-        private void DeleteBtn_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (key == 0)
-                {
-                    MessageBox.Show("missing data!!!");
-                }
-                else
-                {
-                    string Name = EmpNameTb.Text;
-                    string Gender = GenCb.SelectedItem.ToString();
-                    int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
-                    string DOB = DOBTb.Value.ToString();
-                    string JDate = JDateTb.Value.ToString();
-                    int Salary = Convert.ToInt32(DailySalTb.Text);
-                    string Query = "Delete from EmployeeTb1 where Empid= {0}";
-                    Query = string.Format(Query, key);
-                    Con.SetData(Query);
-                    ShowEmp();
-                    MessageBox.Show("Emoloyee Deleted!!!");
-                    EmpNameTb.Text = "";
-                    DailySalTb.Text = "";
-                    GenCb.SelectedIndex = -1;
-                    DepCb.SelectedIndex = -1;
-                }
-            }
-            catch (Exception Ex)
-            {
-                MessageBox.Show(Ex.Message);
-            }
         }
     }
 }
