@@ -106,6 +106,11 @@ namespace EmployeeMgmt2
             Obj.Show();
             this.Hide();
         }
+
+        private void SalaryList_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
         

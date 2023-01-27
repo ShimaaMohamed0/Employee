@@ -43,7 +43,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.PeriodTb = new Guna.UI.WinForms.GunaDateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.SalaryTb = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.AmountTb = new Guna.UI.WinForms.GunaDateTimePicker();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -184,28 +184,28 @@
             this.label6.TabIndex = 32;
             this.label6.Text = "Salary Amount";
             // 
-            // SalaryTb
+            // AmountTb
             // 
-            this.SalaryTb.BackColor = System.Drawing.Color.Teal;
-            this.SalaryTb.BaseColor = System.Drawing.Color.Teal;
-            this.SalaryTb.BorderColor = System.Drawing.Color.Silver;
-            this.SalaryTb.CustomFormat = null;
-            this.SalaryTb.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.SalaryTb.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.SalaryTb.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.SalaryTb.ForeColor = System.Drawing.Color.Black;
-            this.SalaryTb.Location = new System.Drawing.Point(58, 487);
-            this.SalaryTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.SalaryTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.SalaryTb.Name = "SalaryTb";
-            this.SalaryTb.OnHoverBaseColor = System.Drawing.Color.White;
-            this.SalaryTb.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.SalaryTb.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.SalaryTb.OnPressedColor = System.Drawing.Color.Black;
-            this.SalaryTb.Size = new System.Drawing.Size(223, 30);
-            this.SalaryTb.TabIndex = 33;
-            this.SalaryTb.Text = "Thursday, January 26, 2023";
-            this.SalaryTb.Value = new System.DateTime(2023, 1, 26, 20, 54, 25, 602);
+            this.AmountTb.BackColor = System.Drawing.Color.Teal;
+            this.AmountTb.BaseColor = System.Drawing.Color.Teal;
+            this.AmountTb.BorderColor = System.Drawing.Color.Silver;
+            this.AmountTb.CustomFormat = null;
+            this.AmountTb.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.AmountTb.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.AmountTb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.AmountTb.ForeColor = System.Drawing.Color.Black;
+            this.AmountTb.Location = new System.Drawing.Point(58, 487);
+            this.AmountTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.AmountTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.AmountTb.Name = "AmountTb";
+            this.AmountTb.OnHoverBaseColor = System.Drawing.Color.White;
+            this.AmountTb.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.AmountTb.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.AmountTb.OnPressedColor = System.Drawing.Color.Black;
+            this.AmountTb.Size = new System.Drawing.Size(223, 30);
+            this.AmountTb.TabIndex = 33;
+            this.AmountTb.Text = "Thursday, January 26, 2023";
+            this.AmountTb.Value = new System.DateTime(2023, 1, 26, 20, 54, 25, 602);
             // 
             // pictureBox5
             // 
@@ -343,6 +343,7 @@
             this.SalaryList.ThemeStyle.RowsStyle.Height = 22;
             this.SalaryList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.SalaryList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.SalaryList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SalaryList_CellContentClick_1);
             // 
             // AddBtn
             // 
@@ -383,7 +384,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.SalaryTb);
+            this.Controls.Add(this.AmountTb);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.PeriodTb);
             this.Controls.Add(this.label5);
@@ -400,7 +401,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Salaries";
             this.Text = "Salaries";
-            
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -427,7 +427,7 @@
         private System.Windows.Forms.Label label5;
         private Guna.UI.WinForms.GunaDateTimePicker PeriodTb;
         private System.Windows.Forms.Label label6;
-        private Guna.UI.WinForms.GunaDateTimePicker SalaryTb;
+        private Guna.UI.WinForms.GunaDateTimePicker AmountTb;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label8;
