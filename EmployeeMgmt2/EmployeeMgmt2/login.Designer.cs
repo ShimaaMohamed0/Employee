@@ -34,8 +34,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.UNameTb = new System.Windows.Forms.Label();
+            this.PasswordTb = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -87,25 +87,25 @@
             this.textBox2.Size = new System.Drawing.Size(230, 26);
             this.textBox2.TabIndex = 4;
             // 
-            // label2
+            // UNameTb
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Teal;
-            this.label2.Location = new System.Drawing.Point(232, 103);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 20);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "User Name";
+            this.UNameTb.AutoSize = true;
+            this.UNameTb.ForeColor = System.Drawing.Color.Teal;
+            this.UNameTb.Location = new System.Drawing.Point(232, 103);
+            this.UNameTb.Name = "UNameTb";
+            this.UNameTb.Size = new System.Drawing.Size(98, 20);
+            this.UNameTb.TabIndex = 5;
+            this.UNameTb.Text = "User Name";
             // 
-            // label3
+            // PasswordTb
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Teal;
-            this.label3.Location = new System.Drawing.Point(232, 171);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 20);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Password";
+            this.PasswordTb.AutoSize = true;
+            this.PasswordTb.ForeColor = System.Drawing.Color.Teal;
+            this.PasswordTb.Location = new System.Drawing.Point(232, 171);
+            this.PasswordTb.Name = "PasswordTb";
+            this.PasswordTb.Size = new System.Drawing.Size(86, 20);
+            this.PasswordTb.TabIndex = 6;
+            this.PasswordTb.Text = "Password";
             // 
             // button1
             // 
@@ -148,8 +148,8 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.PasswordTb);
+            this.Controls.Add(this.UNameTb);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
@@ -175,8 +175,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label UNameTb;
+        private System.Windows.Forms.Label PasswordTb;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
