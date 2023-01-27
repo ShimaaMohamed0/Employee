@@ -125,7 +125,12 @@ namespace EmployeeMgmt2
                 obj.Show();
                 this.Hide();
             }
+
+        private void Salarylbl_Click(object sender, EventArgs e)
+        {
+
         }
+    }
     }
 
     
