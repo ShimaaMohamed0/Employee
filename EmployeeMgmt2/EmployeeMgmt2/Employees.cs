@@ -15,6 +15,8 @@ namespace EmployeeMgmt2
         Function Con;
         public Employees()
         {
+            Con = new Function();
+          
             InitializeComponent();
         }
 
