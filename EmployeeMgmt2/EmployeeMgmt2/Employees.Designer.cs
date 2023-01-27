@@ -59,7 +59,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.DepLbl = new System.Windows.Forms.Label();
+            this.EmpLbl = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -278,6 +278,7 @@
             this.EmployeeList.ThemeStyle.RowsStyle.Height = 22;
             this.EmployeeList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.EmployeeList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.EmployeeList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployeeList_CellContentClick);
             // 
             // DOBTb
             // 
@@ -406,15 +407,15 @@
             this.pictureBox3.TabIndex = 54;
             this.pictureBox3.TabStop = false;
             // 
-            // DepLbl
+            // EmpLbl
             // 
-            this.DepLbl.AutoSize = true;
-            this.DepLbl.ForeColor = System.Drawing.Color.Teal;
-            this.DepLbl.Location = new System.Drawing.Point(356, 171);
-            this.DepLbl.Name = "DepLbl";
-            this.DepLbl.Size = new System.Drawing.Size(87, 20);
-            this.DepLbl.TabIndex = 53;
-            this.DepLbl.Text = "Employee";
+            this.EmpLbl.AutoSize = true;
+            this.EmpLbl.ForeColor = System.Drawing.Color.Teal;
+            this.EmpLbl.Location = new System.Drawing.Point(356, 171);
+            this.EmpLbl.Name = "EmpLbl";
+            this.EmpLbl.Size = new System.Drawing.Size(87, 20);
+            this.EmpLbl.TabIndex = 53;
+            this.EmpLbl.Text = "Employee";
             // 
             // pictureBox1
             // 
@@ -438,7 +439,7 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.DepLbl);
+            this.Controls.Add(this.EmpLbl);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.UpdateBtn);
             this.Controls.Add(this.AddBtn);
@@ -509,7 +510,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label DepLbl;
+        private System.Windows.Forms.Label EmpLbl;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -36,5 +36,10 @@ namespace EmployeeMgmt2
         {
 
         }
+
+        private void EmployeeList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
