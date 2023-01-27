@@ -47,7 +47,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.GenCb = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.DepCb = new System.Windows.Forms.ComboBox();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
             this.gunaDateTimePicker2 = new Guna.UI.WinForms.GunaDateTimePicker();
@@ -214,13 +214,13 @@
             this.GenCb.Size = new System.Drawing.Size(225, 28);
             this.GenCb.TabIndex = 23;
             // 
-            // comboBox2
+            // DepCb
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(26, 390);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(225, 28);
-            this.comboBox2.TabIndex = 24;
+            this.DepCb.FormattingEnabled = true;
+            this.DepCb.Location = new System.Drawing.Point(26, 390);
+            this.DepCb.Name = "DepCb";
+            this.DepCb.Size = new System.Drawing.Size(225, 28);
+            this.DepCb.TabIndex = 24;
             // 
             // gunaDataGridView1
             // 
@@ -445,7 +445,7 @@
             this.Controls.Add(this.gunaDateTimePicker2);
             this.Controls.Add(this.gunaDateTimePicker1);
             this.Controls.Add(this.gunaDataGridView1);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.DepCb);
             this.Controls.Add(this.GenCb);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel2);
@@ -497,7 +497,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ComboBox GenCb;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox DepCb;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
         private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker1;
         private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker2;
